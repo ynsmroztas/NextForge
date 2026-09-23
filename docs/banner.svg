@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07080c"/>
+      <stop offset="55%" stop-color="#0c1018"/>
+      <stop offset="100%" stop-color="#08140f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="38%" r="42%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1a2430" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="420" fill="url(#bg)"/>
+  <rect width="1280" height="420" fill="url(#grid)" opacity="0.45"/>
+  <rect width="1280" height="420" fill="url(#glow)"/>
+  <circle cx="980" cy="170" r="118" fill="none" stroke="#34d399" stroke-opacity="0.18" stroke-width="1"/>
+  <circle cx="980" cy="170" r="78" fill="none" stroke="#34d399" stroke-opacity="0.28" stroke-width="1"/>
+  <circle cx="980" cy="170" r="38" fill="none" stroke="#34d399" stroke-opacity="0.45" stroke-width="1.2"/>
+  <path d="M980 170 L1128 92" stroke="#34d399" stroke-opacity="0.55" stroke-width="1.5"/>
+  <circle cx="980" cy="170" r="4" fill="#34d399"/>
+  <text x="72" y="78" fill="#6ee7b7" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="16" letter-spacing="4">MITSEC  //  NEXT.JS  FIELD FRAMEWORK</text>
+  <text x="70" y="188" fill="#f3f4f6" font-family="Syne, Sora, ui-sans-serif, sans-serif" font-size="86" font-weight="800">NEXT<tspan fill="#34d399">FORGE</tspan></text>
+  <text x="74" y="236" fill="#9ca3af" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="20">RCE  ·  SSRF  ·  middleware  ·  WAF matrix  ·  lab shell</text>
+  <rect x="74" y="272" width="196" height="36" rx="6" fill="none" stroke="#34d399" stroke-opacity="0.55"/>
+  <text x="88" y="296" fill="#6ee7b7" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="14">CVE-2025-55182</text>
+  <rect x="282" y="272" width="196" height="36" rx="6" fill="none" stroke="#64748b"/>
+  <text x="296" y="296" fill="#cbd5e1" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="14">CVE-2026-44578</text>
+  <rect x="490" y="272" width="196" height="36" rx="6" fill="none" stroke="#64748b"/>
+  <text x="504" y="296" fill="#cbd5e1" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="14">CVE-2025-29927</text>
+  <text x="74" y="360" fill="#6b7280" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="14">v2.1   ·   authorized targets only   ·   @ynsmroztas</text>
+  <text x="980" y="360" fill="#4b5563" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="13" text-anchor="end">ynsmroztas.github.io</text>
+</svg>

