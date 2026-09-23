@@ -1,0 +1,3 @@
+NextForge v2.1
+Run: python3 nextforge.py -t https://lab.example --full
+Readable source extracts with: NEXTFORGE_EXTRACT=1 python3 nextforge.py --help
